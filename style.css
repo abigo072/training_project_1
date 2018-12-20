@@ -8,7 +8,8 @@
 	box-sizing: border-box;
 }
 .clearfix::after,
-.header::after {
+.header::after,
+.grid::after {
     content: "";
     display: table;
     clear: both;
@@ -128,9 +129,6 @@ button:active, button:focus {
     width: 49.15%;
     position: relative;
 }
-.grid__item:nth-of-type(2n) {
-    margin-right: 0;
-}
 .grid__overlay {
     position: absolute;
     top: 0;
@@ -152,10 +150,47 @@ button:active, button:focus {
     text-align: center;
     font-size: 1.8125rem;
 }
-.grid__text{
+.grid__text,
+.icon-circle__picture{
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     transform: translateY(-50%);
+}
+.icon__circle {
+    display: inline-block;
+    width: 6.25rem;
+    height: 6.25rem;
+    background: #ffb9b3;
+    text-align: center;
+    border-radius: 50%;
+    padding: 1.1rem;
+}
+.icon-circle__picture {
+    max-width: 100%;
+}
+.advantage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+.advatage__item {
+    width: 30%;
+    text-align: center;
+    margin-right: 8%;
+}
+.grid__item:nth-of-type(2n),
+.advatage__item:last-child {
+    margin-right: 0;
+}
+.advantage__headline {
+    font-size: 1.25rem;
+    margin: 0 0 0.8rem;
+}
+.advantage__icon {
+    margin-bottom: 1.2rem;
 }
