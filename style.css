@@ -29,8 +29,9 @@ body {
  }
 
 .page__cell {
-    max-width: 1180px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 .header {
     border-bottom: 1px solid #ccc;
@@ -50,6 +51,9 @@ body {
 }
 .header__logo {
     float: left;
+}
+.logo__picture {
+    max-width: 100%;
 }
 .header__contact {
     float: right;
@@ -178,13 +182,13 @@ button:active, button:focus {
     -ms-flex-direction: row;
     flex-direction: row;
 }
-.advatage__item {
+.advantage__item {
     width: 30%;
     text-align: center;
     margin-right: 8%;
 }
 .grid__item:nth-of-type(2n),
-.advatage__item:last-child {
+.advantage__item:last-child {
     margin-right: 0;
 }
 .advantage__headline {
@@ -204,4 +208,30 @@ button:active, button:focus {
 }
 .footer {
     padding: 1.2rem 0;
+}
+.btn-nav {
+    border: 0;
+    background: none;
+    padding: 0.7rem;
+    cursor: pointer;
+    border-radius: 0.2rem;
+}
+.btn-nav:hover {
+    background: #dadada;
+}
+.btn-nav__line {
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 1px;
+    background: #000;
+    margin-bottom: 3px;
+}
+.btn-nav__line:last-child {
+    margin-bottom: 0;
+}
+.nav__btn {
+    text-align: right;
+    margin: 0.7rem 0;
+    display: none;
 }

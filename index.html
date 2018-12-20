@@ -2,10 +2,12 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Test Site</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic" rel="stylesheet">
         <link rel="stylesheet" href="lib/owlcarousel/owl.carousel.min.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/responsive.css">
     </head>
     <body class="page">
         <div class="page__row">
@@ -32,7 +34,14 @@
         <div class="page__row">
             <div class="page__cell">
                 <nav class="nav">
-                    <ul class="nav__list">
+                    <div class="nav__btn">
+                        <button data-target="#nav-main" type="button" class="btn-nav">
+                            <span class="btn-nav__line"></span>
+                            <span class="btn-nav__line"></span>
+                            <span class="btn-nav__line"></span>
+                        </button>
+                    </div>
+                    <ul class="nav__list" id="nav-main">
                         <li class="nav__item">
                             <a href="#" class="nav__link link">
                                 Главная
@@ -140,7 +149,7 @@
                         Наши преимущества
                     </h2>
                     <div class="advantage">
-                        <div class="advatage__item">
+                        <div class="advantage__item">
                             <span class="icon__circle advantage__icon">
                                 <img src="images/advantage-1.svg" class="icon-circle__picture">
                             </span>
@@ -151,7 +160,7 @@
                                 Рыбным текстом называется текст, служащий для временного наполнения макета в публикациях или производстве веб-сайтов, пока финальный текст еще не создан.
                             </div>
                         </div>
-                        <div class="advatage__item">
+                        <div class="advantage__item">
                             <span class="icon__circle advantage__icon">
                                 <img src="images/advantage-2.svg" class="icon-circle__picture">
                             </span>
@@ -162,7 +171,7 @@
                                 Рыбным текстом называется текст, служащий для временного наполнения макета в публикациях или производстве веб-сайтов, пока финальный текст еще не создан.
                             </div>
                         </div>
-                        <div class="advatage__item">
+                        <div class="advantage__item">
                             <span class="icon__circle advantage__icon">
                                 <img src="images/advantage-3.svg" class="icon-circle__picture">
                             </span>
