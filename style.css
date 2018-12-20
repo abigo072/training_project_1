@@ -115,3 +115,9 @@ body {
 button:active, button:focus {
     outline: none !important;
 }
+.headline {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin: 2rem 0;
+}
