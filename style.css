@@ -194,3 +194,14 @@ button:active, button:focus {
 .advantage__icon {
     margin-bottom: 1.2rem;
 }
+.page__row--footer {
+    background: #595959;
+    color: #fff;
+    margin-top: 4.375rem;
+}
+.footer__copyright {
+    text-align: right;
+}
+.footer {
+    padding: 1.2rem 0;
+}
